@@ -7,4 +7,4 @@
 
 ### Attribution Requirements
 - 이 소프트웨어를 사용하는 제품은 다음과 같이 명시해야 합니다:
-  "Powered by Multi-AI Orchestra"
+  "Powered by Multi-AI-Orchestra"

@@ -1,0 +1,36 @@
+# 패키지 개발 진행 상황
+package:
+  name: claude-memory
+  version: 0.1.0
+
+phases:
+  A:
+    name: "Directory Structure & __init__.py"
+    status: "✅ Completed"
+    description: "기본 패키지 구조 및 __init__.py 뼈대 구성"
+
+  B:
+    name: "MemoryManager Separation"
+    status: "🚧 In Progress"
+    description: "메모리 관리 기능을 독립된 모듈로 분리"
+
+  C:
+    name: "BaseProvider Interface"
+    status: "⏳ Planned"
+    description: "AI Provider 추상 인터페이스 정의"
+
+components:
+  core:
+    - MemoryManager
+    - ContextManager
+    - ConversationLogger
+
+  providers:
+    - BaseProvider
+    - ClaudeProvider
+    - OllamaProvider
+
+  interfaces:
+    - BaseInterface
+    - CLIInterface
+    - InteractiveInterface

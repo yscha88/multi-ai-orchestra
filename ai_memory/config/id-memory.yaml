@@ -1,0 +1,38 @@
+# AI Memory 기본 설정
+
+providers:
+  default: "claude"
+  
+  claude:
+    api_key_env: "ANTHROPIC_API_KEY"
+    model: "claude-3-5-sonnet-20241022"
+    max_tokens: 2000
+  
+  ollama:
+    url: "http://localhost:11434"
+    model: "llama3.1:8b"
+
+memory:
+  max_context_tokens: 2000
+  recent_conversations_limit: 5
+  auto_save: true
+
+interfaces:
+  cli:
+    enabled: true
+  interactive:
+    enabled: true
+    commands:
+      - "/save"
+      - "/clear" 
+      - "/quit"
+      - "/help"
+
+# Phase 2에서 추가될 설정들
+# search:
+#   similarity_threshold: 0.7
+#   max_results: 10
+# 
+# team:
+#   sync_enabled: false
+#   shared_patterns: true

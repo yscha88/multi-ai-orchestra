@@ -1,0 +1,19 @@
+# 개인 데이터는 공유하지 않음
+personal/
+config/.env
+
+# Python 캐시
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# IDE 설정
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 로그 파일
+*.log
